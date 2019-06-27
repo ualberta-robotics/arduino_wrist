@@ -2,7 +2,7 @@
 ### REQUIREMENTS
 ### LINKING ARMS
 ```
-rosservice call /zeus/bhand/link_arm 192.168.1.11
+rosservice call /zeus/wam/link_arm 192.168.1.11
 rosservice call /slax/bhand/link_arm 192.168.1.10
 ```
 ### Connecting wrist
