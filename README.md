@@ -29,4 +29,3 @@ Run from the master computer:
 rosrun rosserial_python serial_node.py /dev/ttyACM0
 rosrun encoder_to_wam_wrist encoder_to_wrist
 ```
-### Run
