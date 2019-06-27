@@ -1,6 +1,9 @@
-## WAM4DOF (SLAX) WITH WRIST LINKING WITH WAM7DOF (ZEUS)
+## WAM4DOF (SLAX) + WRIST LINKED WITH WAM7DOF (ZEUS)
 ### Connecting to Zeus and Slax 
-Run roscore running on your computer.
+Run from the master computer:
+```
+roscore
+```
 Connect to Zeus and source to the master computer and advertise services:
 ```
 ssh robot@192.168.1.10
@@ -20,7 +23,7 @@ rosservice call /zeus/wam/link_arm 192.168.1.11
 rosservice call /slax/bhand/link_arm 192.168.1.10
 ```
 ### Connecting Arduino Wrist
-Connect the wrist to the master computer via USB.
+Connect the wrist to the master computer via USB. <br />
 Run from the master computer:
 ```
 rosrun rosserial_python serial_node.py /dev/ttyACM0
